@@ -1,0 +1,1 @@
+## Ensembling Deep Learning And CIELAB Color Space Model for Fire Detection from UAV images
