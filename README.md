@@ -5,29 +5,28 @@ Wildfires can cause significant damage to forests and endanger wildlife. Detecti
 <div align='center'>
     <img src="reports/figures/Ensemble_Voting_Classifier.png" width="70%">
 </div>
+<hr>
 
 ### Sample results by processing in CIELAB space
 
-------------
 <div align='center'>
     <img src="reports/figures/CIELAB_results.png" width="40%">
 </div>
 
 (a) Original images from the training dataset (b) Mask made from the fire pixels identified by our proposed CIELAB color model (c) Segmented fire using original image and the mask. Evidently, our color model can extract fire pixels which may be difficult to observe by the naked eye.
+<hr>
 
 ### Sample results by Ensemble Voting Technique
 
-------------
 <div align='center'>
     <img src="reports/figures/Ensemble_Voting_results.png" width="50%">
 </div>
 
 Three ‘Fire’ images that are correctly classified by ensemble voting technique but are misclassified by one of the three consitutent models. (a) Misclassified by Inception- Resnet-V2 (b) Misclassified by CIELAB model (c) Misclassified by XceptionSVM. These images prove the superiority of en- semble voting technique.
-
+<hr>
 
 ### Project Organization
 
-------------
 ```
 FireDetection
 ├─ .gitignore
@@ -124,5 +123,5 @@ After the models have been trained and saved in ```models/trained_model```
 ```python models/ensemble.py ```
 
 ## License
-<hr>
+
 CC BY-NC-ND 4.0
