@@ -5,7 +5,7 @@ Wildfires can cause significant damage to forests and endanger wildlife. Detecti
 <div align='center'>
     <img src="reports/figures/Ensemble_Voting_Classifier.png" width="70%">
 </div>
-<hr style="border-bottom: 0px">
+<hr size="5">
 
 ### Sample results by processing in CIELAB space
 
