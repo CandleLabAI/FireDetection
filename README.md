@@ -72,7 +72,7 @@ pip install -r requirements.txt
 
 First, create a conda environment
 ```bash
-conda create -n fireDetection # python=3
+conda create -n fireDetection
 conda activate fireDetection
 ```
 
