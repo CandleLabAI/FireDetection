@@ -5,7 +5,6 @@ Wildfires can cause significant damage to forests and endanger wildlife. Detecti
 <div align='center'>
     <img src="reports/figures/Ensemble_Voting_Classifier.png" width="70%">
 </div>
-<hr style="height:0.4px;border-width:0;color:gray;background-color:gray">
 
 ### Sample results by processing in CIELAB space
 
@@ -14,7 +13,6 @@ Wildfires can cause significant damage to forests and endanger wildlife. Detecti
 </div>
 
 (a) Original images from the training dataset (b) Mask made from the fire pixels identified by our proposed CIELAB color model (c) Segmented fire using original image and the mask. Evidently, our color model can extract fire pixels which may be difficult to observe by the naked eye.
-<hr>
 
 ### Sample results by Ensemble Voting Technique
 
@@ -23,9 +21,8 @@ Wildfires can cause significant damage to forests and endanger wildlife. Detecti
 </div>
 
 Three ‘Fire’ images that are correctly classified by ensemble voting technique but are misclassified by one of the three consitutent models. (a) Misclassified by Inception- Resnet-V2 (b) Misclassified by CIELAB model (c) Misclassified by XceptionSVM. These images prove the superiority of en- semble voting technique.
-<hr>
 
-### Project Organization
+## Project Organization
 
 ```
 FireDetection
