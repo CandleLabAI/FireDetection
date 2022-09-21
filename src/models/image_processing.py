@@ -11,29 +11,28 @@ sys.path.append(os.path.join(os.path.abspath(os.path.join(os.getcwd(), os.pardir
 from config import *
 
 
-def classification_img_processing_new(img):
+def classification_img_processing(img):
     lab = color.rgb2lab(img)
     h = lab.shape[0]  # height
     w = lab.shape[1]  # width
-    count = 0
     for row in range(h):
         for col in range(w):
             # Applying limit of hue from 10◦ to 90◦ and chroma of 19.
             if lab[row][col][2] > 0 and lab[row][col][1] > 0 and (lab[row][col][2] * (1.0 / lab[row][col][1]) > 0.1763):
                 if (lab[row][col][2] * lab[row][col][2] + lab[row][col][1] * lab[row][col][1]) >= 361:
-                    count = count + 1
-    return count
+                    return 1
+    return 0
 
 
 def print_count(images_path, class_type):
-    input_dir_path = images_path + '/' + class_type
+    input_dir_path = os.path.join(images_path, class_type)
     total = 0
     fire_count = 0
     for image_filename in tqdm(os.listdir(input_dir_path)):
         total += 1
-        image_path = input_dir_path + '/' + image_filename
+        image_path = os.path.join(input_dir_path, image_filename)
         img = np.array(Image.open(image_path))
-        result = classification_img_processing_new(img)
+        result = classification_img_processing(img)
         fire_count += result
 
     print("Fire: ", fire_count)
