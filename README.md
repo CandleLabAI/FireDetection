@@ -62,7 +62,6 @@ FireDetection
 
 ```
 ## Get Started
-<hr>
 Dependencies:
 
 ```
